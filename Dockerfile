@@ -1,7 +1,7 @@
 FROM node:18
 WORKDIR /app
-COPY PACKAGE.json /app
+COPY package.json /app
 RUN npm install
-COPY ./app
+COPY . /app
 CMD node index.js
 EXPOSE 3000
